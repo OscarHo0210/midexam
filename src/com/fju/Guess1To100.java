@@ -28,7 +28,9 @@ public class Guess1To100 {
             }else if (number==hideNumber){
                 System.out.println("You win, the number is "+hideNumber);
                 break;
-            }else if (number != hideNumber){
+            }
+
+            if (i==4){
                 System.out.println("You loose, the number is "+ hideNumber);
                 break;
             }

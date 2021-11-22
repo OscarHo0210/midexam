@@ -12,13 +12,10 @@ public class StarBlock {
 
         for (int i = 0; i<8; i++){
             for (int j = 0; j<20; j++){
-                if (j == firstNumber || j == secondNumber){
+                if (j >= firstNumber-1 && j <= secondNumber-1){
                     System.out.print("*");
                 }else {
                     System.out.print("0");
-                }
-                if (j == firstNumber+1 || j == secondNumber+1){
-
                 }
             }
             System.out.println();
